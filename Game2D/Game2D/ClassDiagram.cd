@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Game2D.Models.Player">
+    <Position X="1.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAEAAAAQIAAAEAAAAgAAUAIAIAEAAAABgAAAUAAAAE=</HashCode>
+      <FileName>Models\Player.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Game2D.GameSource">
+    <Position X="9" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>GameSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Game2D.Interfaces.IAttackable">
+    <Position X="4" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IAttackable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Game2D.Interfaces.IMovable">
+    <Position X="4" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IMovable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Game2D.Interfaces.IPlayer">
+    <Position X="4" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAIAAAEAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Interfaces\IPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Game2D.Enumerations.AttackType">
+    <Position X="6" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Enumerations\AttackType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Game2D.Enumerations.Direction">
+    <Position X="6" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAACACAAAAAAAI=</HashCode>
+      <FileName>Enumerations\Direction.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Game2D.Enumerations.Item">
+    <Position X="6" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAABAAAAAQAAAAgAEAAAAAAAAAI=</HashCode>
+      <FileName>Enumerations\Item.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Game2D.Enumerations.PlayerType">
+    <Position X="6" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAEAAAAAAAAAAAAAAAAAAAAAAQAgAIAAAAAAA=</HashCode>
+      <FileName>Enumerations\PlayerType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>
