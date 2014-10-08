@@ -1,15 +1,17 @@
 ﻿namespace Game2D.Models
 {
+    using System;
     using Game2D.Enumerations;
     using Game2D.Interfaces;
-    using System;
 
-    public class Player : IMovable, IAttackable, IPlayer
+    public abstract class Player : IMovable, IAttackable, IPlayer
     {
-        private const int DefaultHealthPoints = 100;
-        private const int DefaultAttackPoints = 20;
-        private const int DefaultDefencePoints = 10;
-        private const int DefaultStartLevel = 1;
+        protected const int DefaultHealthPoints = 100;
+        protected const int DefaultAttackPoints = 20;
+        protected const int DefaultDefencePoints = 10;
+        protected const int DefaultStartLevel = 1;
+
+        private const string PlayerFormatString = "Health points: {0}\nAttack points: {1}\nDefence points: {2}\nCurrent level: {3}\nPlayer type: {4}";
 
         private int healthPoints;
         private int attackPoints;
@@ -17,12 +19,12 @@
         private int currentLevel;
         private PlayerType playerType;
 
-        public Player()
-            : this(DefaultHealthPoints, DefaultAttackPoints, DefaultDefencePoints, DefaultStartLevel, PlayerType.Warrior)
+        public Player(PlayerType playerType)
+            : this(DefaultHealthPoints, DefaultAttackPoints, DefaultDefencePoints, DefaultStartLevel, playerType)
         {
         }
 
-        private Player(int healthPoints, int attackPoints, int defencePoints, int currentLevel, PlayerType playerType)
+        public Player(int healthPoints, int attackPoints, int defencePoints, int currentLevel, PlayerType playerType)
         {
             this.HealthPoints = healthPoints;
             this.AttackPoints = attackPoints;
@@ -38,7 +40,7 @@
                 return this.healthPoints;
             }
 
-            private set
+            protected set
             {
                 if (value < 0)
                 {
@@ -56,7 +58,7 @@
                 return this.attackPoints;
             }
 
-            private set
+            protected set
             {
                 if (value < 0)
                 {
@@ -74,7 +76,7 @@
                 return this.defencePoints;
             }
 
-            private set
+            protected set
             {
                 if (value < 0)
                 {
@@ -92,7 +94,7 @@
                 return this.currentLevel;
             }
 
-            private set
+            protected set
             {
                 if (value < 0)
                 {
@@ -118,6 +120,11 @@
         public virtual void Attack(Player player)
         {
             throw new NotImplementedException();
+        }
+
+        public override string ToString()
+        {
+            return string.Format(PlayerFormatString, this.HealthPoints, this.AttackPoints, this.DefencePoints, this.CurrentLevel, this.PlayerType);
         }
     }
 }
