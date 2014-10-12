@@ -24,5 +24,13 @@ namespace TheDarkForest.Views
         {
             InitializeComponent();
         }
+
+        private void CanvasOnLoadedSetSizeToWindow(object sender, RoutedEventArgs e)
+        {
+            var canvas = (Canvas)sender;
+
+            canvas.Width = Application.Current.MainWindow.ActualWidth;
+            canvas.Height = Application.Current.MainWindow.ActualHeight;
+        }
     }
 }
