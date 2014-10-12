@@ -5,6 +5,6 @@
         WindowState="Maximized" 
         WindowStyle="None">
     <StackPanel Name="MainPanel">
-        <views:SplashScreen x:Name="SplashScreen" Loaded="SplashScreenOnLoadedSwitchToMenuView" />
+        <views:StartMenuScreen x:Name="StartScreen" />
     </StackPanel>
 </Window>
