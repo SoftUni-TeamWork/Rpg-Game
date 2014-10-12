@@ -18,14 +18,14 @@
         private int defencePoints;
         private int currentLevel;
         private Position position;
-        private string id;
-
+        
         //public Character()
         //    : this(DefaultHealthPoints, DefaultAttackPoints, DefaultDefencePoints, DefaultStartLevel, DefaultPosition)
         //{
         //}
-        
-        public Character(string id, int healthPoints, int attackPoints, int defencePoints, int currentLevel, Position position)
+
+        public Character(Guid id, int healthPoints, int attackPoints, int defencePoints, int currentLevel, Position position) 
+            : base(id)
         {
             this.HealthPoints = healthPoints;
             this.AttackPoints = attackPoints;
@@ -34,35 +34,14 @@
             this.Position = position;
         }
 
-        public string Id
-        {
-            get
-            {
-                return this.id;
-            }
-
-            protected set
-            {
-                if (!string.IsNullOrEmpty(value))
-                {
-                    this.id = value;
-                }
-                else
-                {
-                    throw new ArgumentException("No id character can not be created!");
-                }
-
-            }
-        }
-
         public int HealthPoints
         {
             get
             {
                 return this.healthPoints;
             }
-
-            protected set
+           
+            internal set
             {
                 if (value < 0)
                 {
@@ -150,7 +129,7 @@
             throw new NotImplementedException();
         }
 
-        public virtual void Attack(Character gameObject, AttackType attackType)
+        public virtual void Attack(Character target, AttackType attackType)
         {
             throw new NotImplementedException();
         }

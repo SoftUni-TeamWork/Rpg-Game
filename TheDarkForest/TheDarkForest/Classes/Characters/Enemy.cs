@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace TheDarkForest.Classes.Characters
 {
-    class Enemy
+    public class Enemy : Character
     {
+        public Enemy(Guid id, int healthPoints, int attackPoints, int defencePoints, int currentLevel, Position position) 
+            : base(id, healthPoints, attackPoints, defencePoints, currentLevel, position)
+        {
+        }
     }
 }

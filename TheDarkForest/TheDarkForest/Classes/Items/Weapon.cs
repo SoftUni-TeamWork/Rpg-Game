@@ -8,7 +8,7 @@ namespace TheDarkForest.Classes
 {
     public class Weapon : Item
     {
-        public Weapon(string id, int effectOnChar) 
+        public Weapon(Guid id, int effectOnChar) 
             : base(id, effectOnChar)
         {
 

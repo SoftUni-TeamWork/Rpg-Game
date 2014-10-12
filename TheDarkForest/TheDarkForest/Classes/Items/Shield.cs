@@ -8,7 +8,7 @@ namespace TheDarkForest.Classes.Items
 {
     public class Shield : Item
     {
-        public Shield(string id, int effectOnChar) 
+        public Shield(Guid id, int effectOnChar) 
             : base(id, effectOnChar)
         {
         }

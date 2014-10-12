@@ -7,17 +7,15 @@ using System.Windows.Media.Effects;
 
 namespace TheDarkForest.Classes
 {
-    public abstract class Item
+    public abstract class Item : GameObject
     {
 
-        public Item (string id, int effectOnChar) // owner is not required if element is not in character :)
+        public Item(Guid id, int effectOnChar) 
+            : base(id)
         {
-            this.ID = id;
             this.EffectOnCharr = effectOnChar;
         }
 
-        public string ID { get; set; }
         public int EffectOnCharr { get; set; }
-        public Character Owner { get; set; }
     }
 }
