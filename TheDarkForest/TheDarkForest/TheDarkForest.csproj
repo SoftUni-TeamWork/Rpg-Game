@@ -57,13 +57,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Resources\Classes\Characters\Enemy.cs" />
+    <Compile Include="Resources\Classes\Characters\Player.cs" />
+    <Compile Include="Resources\Classes\Items\Armor.cs" />
+    <Compile Include="Resources\Classes\Characters\Character.cs" />
     <Compile Include="Resources\Classes\GameObject.cs" />
+    <Compile Include="Resources\Classes\Items\HealtPotion.cs" />
+    <Compile Include="Resources\Classes\Items\Item.cs" />
+    <Compile Include="Resources\Classes\Items\Shield.cs" />
     <Compile Include="Resources\Classes\Position.cs" />
+    <Compile Include="Resources\Classes\Items\Weapon.cs" />
     <Compile Include="Resources\Enumerations\AttackType.cs" />
     <Compile Include="Resources\Enumerations\Direction.cs" />
     <Compile Include="Resources\Enumerations\Item.cs" />
     <Compile Include="Resources\Interfaces\IAttack.cs" />
-    <Compile Include="Resources\Interfaces\IGameObject.cs" />
+    <Compile Include="Resources\Interfaces\ICharacter.cs" />
     <Compile Include="Resources\Interfaces\IMove.cs" />
     <Compile Include="Views\GameField.xaml.cs">
       <DependentUpon>GameField.xaml</DependentUpon>
@@ -128,6 +136,10 @@
     <Resource Include="Resources\Images\map-background.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\spriteEnemyt.png" />
+    <Resource Include="Resources\Images\spritePlayer.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

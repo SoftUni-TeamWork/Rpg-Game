@@ -5,6 +5,6 @@
 
     public interface IAttack
     {
-        void Attack(GameObject gameObject, AttackType attackType);
+        void Attack(Character gameObject, AttackType attackType);
     }
 }

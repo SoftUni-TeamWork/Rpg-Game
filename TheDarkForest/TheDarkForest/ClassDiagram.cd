@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="TheDarkForest.Resources.Classes.GameObject">
+  <Class Name="TheDarkForest.Resources.Classes.Character">
     <Position X="2" Y="1" Width="1.5" />
     <Compartments>
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>ACAEAAAAQIAAAEAgAAgAIQgIAIAEAAAABgAAAQAAAAE=</HashCode>
-      <FileName>Resources\Classes\GameObject.cs</FileName>
+      <HashCode>ACAGAAAAQIAAAEAgAAgAIQgIAIAEAAAABgAAAQAAAgE=</HashCode>
+      <FileName>Resources\Classes\Characters\Character.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
@@ -32,11 +32,11 @@
       <FileName>Resources\Interfaces\IMove.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="TheDarkForest.Resources.Interfaces.IGameObject">
+  <Interface Name="TheDarkForest.Resources.Interfaces.ICharacter">
     <Position X="5.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAQAAAAAAgAAAAAAAIAAAEAAAAAAAAAQAAAAA=</HashCode>
-      <FileName>Resources\Interfaces\IGameObject.cs</FileName>
+      <FileName>Resources\Interfaces\ICharacter.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Enum Name="TheDarkForest.Resources.Enumerations.AttackType">
