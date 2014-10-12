@@ -1,8 +1,8 @@
-﻿namespace TheDarkForest.Resources.Classes
+﻿namespace TheDarkForest.Classes
 {
     using System;
-    using TheDarkForest.Resources.Enumerations;
-    using TheDarkForest.Resources.Interfaces;
+    using TheDarkForest.Enumerations;
+    using TheDarkForest.Interfaces;
 
     public abstract class Character : GameObject, ICharacter, IMove, IAttack
     {

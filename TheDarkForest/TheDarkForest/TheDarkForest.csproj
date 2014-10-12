@@ -57,22 +57,22 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Resources\Classes\Characters\Enemy.cs" />
-    <Compile Include="Resources\Classes\Characters\Player.cs" />
-    <Compile Include="Resources\Classes\Items\Armor.cs" />
-    <Compile Include="Resources\Classes\Characters\Character.cs" />
-    <Compile Include="Resources\Classes\GameObject.cs" />
-    <Compile Include="Resources\Classes\Items\HealPotion.cs" />
-    <Compile Include="Resources\Classes\Items\Item.cs" />
-    <Compile Include="Resources\Classes\Items\Shield.cs" />
-    <Compile Include="Resources\Classes\Position.cs" />
-    <Compile Include="Resources\Classes\Items\Weapon.cs" />
-    <Compile Include="Resources\Enumerations\AttackType.cs" />
-    <Compile Include="Resources\Enumerations\Direction.cs" />
-    <Compile Include="Resources\Enumerations\Item.cs" />
-    <Compile Include="Resources\Interfaces\IAttack.cs" />
-    <Compile Include="Resources\Interfaces\ICharacter.cs" />
-    <Compile Include="Resources\Interfaces\IMove.cs" />
+    <Compile Include="Classes\Characters\Character.cs" />
+    <Compile Include="Classes\Characters\Enemy.cs" />
+    <Compile Include="Classes\Characters\Player.cs" />
+    <Compile Include="Classes\GameObject.cs" />
+    <Compile Include="Classes\Items\Armor.cs" />
+    <Compile Include="Classes\Items\HealPotion.cs" />
+    <Compile Include="Classes\Items\Item.cs" />
+    <Compile Include="Classes\Items\Shield.cs" />
+    <Compile Include="Classes\Items\Weapon.cs" />
+    <Compile Include="Classes\Position.cs" />
+    <Compile Include="Enumerations\AttackType.cs" />
+    <Compile Include="Enumerations\Direction.cs" />
+    <Compile Include="Enumerations\Item.cs" />
+    <Compile Include="Interfaces\IAttack.cs" />
+    <Compile Include="Interfaces\ICharacter.cs" />
+    <Compile Include="Interfaces\IMove.cs" />
     <Compile Include="Views\GameField.xaml.cs">
       <DependentUpon>GameField.xaml</DependentUpon>
     </Compile>

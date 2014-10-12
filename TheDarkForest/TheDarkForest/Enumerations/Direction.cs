@@ -1,4 +1,4 @@
-﻿namespace TheDarkForest.Resources.Enumerations
+﻿namespace TheDarkForest.Enumerations
 {
     public enum Direction
     {

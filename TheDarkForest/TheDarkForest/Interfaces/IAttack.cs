@@ -1,7 +1,7 @@
-﻿namespace TheDarkForest.Resources.Interfaces
+﻿namespace TheDarkForest.Interfaces
 {
-    using TheDarkForest.Resources.Classes;
-    using TheDarkForest.Resources.Enumerations;
+    using TheDarkForest.Classes;
+    using TheDarkForest.Enumerations;
 
     public interface IAttack
     {

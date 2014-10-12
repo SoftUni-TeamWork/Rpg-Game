@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media.Effects;
 
-namespace TheDarkForest.Resources.Classes
+namespace TheDarkForest.Classes
 {
     public abstract class Item
     {

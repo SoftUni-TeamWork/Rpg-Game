@@ -1,6 +1,6 @@
-﻿namespace TheDarkForest.Resources.Interfaces
+﻿namespace TheDarkForest.Interfaces
 {
-    using TheDarkForest.Resources.Classes;
+    using TheDarkForest.Classes;
 
     public interface ICharacter
     {

@@ -1,6 +1,6 @@
-﻿namespace TheDarkForest.Resources.Interfaces
+﻿namespace TheDarkForest.Interfaces
 {
-    using TheDarkForest.Resources.Enumerations;
+    using TheDarkForest.Enumerations;
 
     public interface IMove
     {

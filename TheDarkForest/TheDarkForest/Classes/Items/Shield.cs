@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TheDarkForest.Resources.Classes.Items
+namespace TheDarkForest.Classes.Items
 {
     public class Shield : Item
     {

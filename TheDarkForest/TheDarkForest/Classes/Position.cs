@@ -1,4 +1,4 @@
-﻿namespace TheDarkForest.Resources.Classes
+﻿namespace TheDarkForest.Classes
 {
     using System;
 
