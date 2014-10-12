@@ -7,6 +7,9 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Canvas>
+    	<Canvas.Background>
+    		<ImageBrush x:Name="brush" ImageSource="../Resources/Images/splash-screen.jpg"/>
+    	</Canvas.Background>
         <TextBlock Name="WelcomeText"
                    Panel.ZIndex="2" 
                    TextAlignment="Center" 
@@ -21,6 +24,5 @@
                 <DropShadowEffect ShadowDepth="0" BlurRadius="10" Color="#FFF" />
             </TextBlock.Effect>
         </TextBlock>
-        <Image Panel.ZIndex="1" Source="D:\Projects\SoftUni\OOP\TeamWork\TheDarkForest\TheDarkForest\Resources\Images\splash-screen.jpg" Stretch="UniformToFill" />
     </Canvas>
 </UserControl>
