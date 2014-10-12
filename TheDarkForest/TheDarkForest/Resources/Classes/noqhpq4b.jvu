@@ -1,0 +1,24 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Media.Effects;
+
+namespace TheDarkForest.Resources.Classes
+{
+    public abstract class Item
+    {
+
+        public Item (string name, int effectOnChar, Character owner = null) // owner is not required if element is not in character :)
+        {
+            this.Name = name;
+            this.EffectOnCharr = effectOnChar;
+            this.Owner = owner;
+        }
+
+        public string Name { get; set; }
+        public int EffectOnCharr { get; set; }
+        public Character Owner { get; set; }
+    }
+}
