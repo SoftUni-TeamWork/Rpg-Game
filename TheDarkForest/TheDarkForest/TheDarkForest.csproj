@@ -73,6 +73,9 @@
     <Compile Include="Resources\Interfaces\IAttack.cs" />
     <Compile Include="Resources\Interfaces\ICharacter.cs" />
     <Compile Include="Resources\Interfaces\IMove.cs" />
+    <Compile Include="Views\GameField.xaml.cs">
+      <DependentUpon>GameField.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\GameWindow.xaml.cs">
       <DependentUpon>GameWindow.xaml</DependentUpon>
     </Compile>
@@ -86,6 +89,10 @@
     <Compile Include="Views\StartMenuScreen.xaml.cs">
       <DependentUpon>StartMenuScreen.xaml</DependentUpon>
     </Compile>
+    <Page Include="Views\GameField.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\GameWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -128,7 +135,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Images\splash-screen.jpg" />
+    <Resource Include="Resources\Images\splash-screen.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\map-background.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Images\spriteEnemyt.png" />

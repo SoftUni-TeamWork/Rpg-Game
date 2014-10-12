@@ -29,5 +29,12 @@ namespace TheDarkForest.Views
         {
             Application.Current.Shutdown();
         }
+
+        private void ButtonOnClickStart(object sender, RoutedEventArgs e)
+        {
+            var stackPanel = (StackPanel)Application.Current.MainWindow.Content;
+            stackPanel.Children.Add(new GameField());
+            stackPanel.Children.Remove(this);
+        }
     }
 }
