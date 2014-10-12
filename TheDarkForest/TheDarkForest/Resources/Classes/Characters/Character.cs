@@ -43,7 +43,7 @@
 
             protected set
             {
-                if (string.IsNullOrEmpty(value))
+                if (!string.IsNullOrEmpty(value))
                 {
                     this.id = value;
                 }

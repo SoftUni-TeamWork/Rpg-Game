@@ -62,7 +62,7 @@
     <Compile Include="Resources\Classes\Items\Armor.cs" />
     <Compile Include="Resources\Classes\Characters\Character.cs" />
     <Compile Include="Resources\Classes\GameObject.cs" />
-    <Compile Include="Resources\Classes\Items\HealtPotion.cs" />
+    <Compile Include="Resources\Classes\Items\HealPotion.cs" />
     <Compile Include="Resources\Classes\Items\Item.cs" />
     <Compile Include="Resources\Classes\Items\Shield.cs" />
     <Compile Include="Resources\Classes\Position.cs" />

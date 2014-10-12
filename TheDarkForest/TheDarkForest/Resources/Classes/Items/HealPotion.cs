@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace TheDarkForest.Resources.Classes.Items
 {
-    class HealtPotion : Item
+    class HealPotion : Item
     {
-        public HealtPotion(string id, int effectOnChar) 
+        public HealPotion(string id, int effectOnChar) 
             : base(id, effectOnChar)
         {
         }
