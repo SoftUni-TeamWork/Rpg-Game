@@ -21,6 +21,6 @@
                 <DropShadowEffect ShadowDepth="0" BlurRadius="10" Color="#FFF" />
             </TextBlock.Effect>
         </TextBlock>
-        <Image Panel.ZIndex="1" Source="D:\Projects\SoftUni\OOP\TeamWork\TheDarkForest\TheDarkForest\Resources\Images\splash-screen.jpg" Stretch="UniformToFill" />
+        <Image Panel.ZIndex="1" Source="\Resources\Images\splash-screen.jpg" Stretch="UniformToFill" />
     </Canvas>
 </UserControl>
