@@ -23,12 +23,5 @@ namespace TheDarkForest.Views
         {
             InitializeComponent();
         }
-
-        private async void SplashScreenOnLoadedSwitchToMenuView(object sender, RoutedEventArgs e)
-        {
-            await Task.Delay(SplashScreen.DisplayDuration);
-            this.MainPanel.Children.Clear();
-            this.MainPanel.Children.Add(new StartMenuScreen());
-        }
     }
 }
