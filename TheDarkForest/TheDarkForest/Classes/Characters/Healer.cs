@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TheDarkForest.Classes.Characters
+﻿namespace TheDarkForest.Classes.Characters
 {
     using System;
 
@@ -27,7 +21,7 @@ namespace TheDarkForest.Classes.Characters
                     player.Position.Y - this.Position.X < 1)
                 {
                     player.HealthPoints += HealingPotion * player.CurrentLevel; // healing depents of players leveal 
-                    isTired = false;
+                    this.isTired = false;
                 }
             }
         }

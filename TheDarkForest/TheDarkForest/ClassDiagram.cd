@@ -15,49 +15,49 @@
       <FileName>Classes\GameObject.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TheDarkForest.Classes.Armor" Collapsed="true">
+  <Class Name="TheDarkForest.Classes.Armor">
     <Position X="11.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\Items\Armor.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TheDarkForest.Classes.Item" Collapsed="true">
     <Position X="9.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <HashCode>AAIAAAAAAAAQAAAAAAAAAAAAAgAAAgIAAAAAABAAAAA=</HashCode>
       <FileName>Classes\Items\Item.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TheDarkForest.Classes.Weapon" Collapsed="true">
+  <Class Name="TheDarkForest.Classes.Weapon">
     <Position X="7.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\Items\Weapon.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TheDarkForest.Classes.Characters.Enemy" Collapsed="true">
+  <Class Name="TheDarkForest.Classes.Characters.Enemy">
     <Position X="0.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\Characters\Enemy.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TheDarkForest.Classes.Characters.Healer" Collapsed="true">
+  <Class Name="TheDarkForest.Classes.Characters.Healer">
     <Position X="2.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAACAAAAAAAAAIAAAAAAAAAAAAAAAEAA=</HashCode>
       <FileName>Classes\Characters\Healer.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TheDarkForest.Classes.Characters.Player" Collapsed="true">
+  <Class Name="TheDarkForest.Classes.Characters.Player">
     <Position X="5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAABBAAAAAQAA=</HashCode>
       <FileName>Classes\Characters\Player.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TheDarkForest.Classes.Items.Shield" Collapsed="true">
+  <Class Name="TheDarkForest.Classes.Items.Shield">
     <Position X="9.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>

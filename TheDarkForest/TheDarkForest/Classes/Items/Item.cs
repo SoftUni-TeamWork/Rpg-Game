@@ -4,29 +4,69 @@
 
     public abstract class Item : GameObject
     {
-        private int effectOnChar;
+        private int effectHealthPoints;
+        private int effectAttackPoints;
+        private int effectDefencePoints;
 
-        public Item(Guid id, int effectOnChar)
+        public Item(Guid id, int effectHealthPoints, int effectAttackPoints, int effectDefencePoints)
             : base(id)
         {
-            this.EffectOnCharr = effectOnChar;
+            this.EffectHealthPoints = effectHealthPoints;
+            this.EffectAttackPoints = effectAttackPoints;
+            this.EffectDefencePoints = effectDefencePoints;
         }
 
-        public int EffectOnCharr
+        public int EffectHealthPoints
         {
             get
             {
-                return this.effectOnChar;
+                return this.effectHealthPoints;
             }
 
             private set
             {
                 if (value < 0)
                 {
-                    throw new ArgumentException("The effect on the character cannot be negative");
+                    throw new ArgumentException("The health points of the item cannot be negative");
                 }
 
-                this.effectOnChar = value;
+                this.effectHealthPoints = value;
+            }
+        }
+
+        public int EffectAttackPoints
+        {
+            get
+            {
+                return this.effectAttackPoints;
+            }
+
+            private set
+            {
+                if (value < 0)
+                {
+                    throw new ArgumentException("The attack points of the item cannot be negative");
+                }
+
+                this.effectAttackPoints = value;
+            }
+        }
+
+        public int EffectDefencePoints
+        {
+            get
+            {
+                return this.effectDefencePoints;
+            }
+
+            private set
+            {
+                if (value < 0)
+                {
+                    throw new ArgumentException("The defence points of the item cannot be negative");
+                }
+
+                this.effectDefencePoints = value;
             }
         }
     }

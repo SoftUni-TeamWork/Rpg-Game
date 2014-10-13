@@ -23,7 +23,7 @@
             {
                 if (this.neededExperienceForLevelUp >= value)
                 {
-                    LevelUp();
+                    this.LevelUp();
                 }
 
                 this.experience = value;
