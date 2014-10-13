@@ -64,6 +64,7 @@
     <Compile Include="Classes\Characters\Player.cs" />
     <Compile Include="Classes\GameObject.cs" />
     <Compile Include="Classes\Items\Armor.cs" />
+    <Compile Include="Classes\Items\Inventory.cs" />
     <Compile Include="Classes\Items\Item.cs" />
     <Compile Include="Classes\Items\Shield.cs" />
     <Compile Include="Classes\Items\Weapon.cs" />

@@ -1,6 +1,7 @@
 ﻿namespace TheDarkForest.Classes
 {
     using System;
+    using TheDarkForest.Classes.Items;
     using TheDarkForest.Enumerations;
     using TheDarkForest.Interfaces;
 
@@ -18,6 +19,7 @@
         private int defencePoints;
         private int currentLevel;
         private Position position;
+        private Inventory inventory;
         
         // public Character()
         //    : this(DefaultHealthPoints, DefaultAttackPoints, DefaultDefencePoints, DefaultStartLevel, DefaultPosition)
@@ -32,6 +34,7 @@
             this.DefencePoints = defencePoints;
             this.CurrentLevel = currentLevel;
             this.Position = position;
+            this.inventory = new Inventory();
         }
 
         public int HealthPoints
@@ -122,6 +125,24 @@
             {
                 this.position = value;
             }
+        }
+
+        public void AddItem(Item item)
+        {
+            this.inventory.AddItem(item);
+
+            this.HealthPoints += item.EffectHealthPoints;
+            this.AttackPoints += item.EffectAttackPoints;
+            this.DefencePoints += item.EffectDefencePoints;
+        }
+
+        public void RemoveItem(Item item)
+        {
+            this.inventory.RemoveItem(item);
+
+            this.HealthPoints -= item.EffectHealthPoints;
+            this.AttackPoints -= item.EffectAttackPoints;
+            this.DefencePoints -= item.EffectDefencePoints;
         }
 
         public virtual void Move(Direction direction)
