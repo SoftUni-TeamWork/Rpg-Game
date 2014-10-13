@@ -1,10 +1,10 @@
-﻿using System;
-
-namespace TheDarkForest.Classes
+﻿namespace TheDarkForest.Classes
 {
+    using System;
+
     public abstract class GameObject
     {
-        public Guid id;
+        private Guid id;
 
         public GameObject(Guid id)
         {
@@ -20,14 +20,12 @@ namespace TheDarkForest.Classes
 
             protected set
             {
-                if (value != null)
+                if (value == null)
                 {
-                   this.id = value;
+                    throw new ArgumentException("The id cannot be null");
                 }
-                else
-                {
-                    throw new ArgumentException("The Game object must have id!");
-                }
+
+                this.id = value;
             }
         }
     }

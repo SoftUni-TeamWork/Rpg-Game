@@ -1,63 +1,116 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="TheDarkForest.Resources.Classes.Character">
-    <Position X="2" Y="1" Width="1.5" />
-    <Compartments>
-      <Compartment Name="Fields" Collapsed="true" />
-    </Compartments>
+  <Class Name="TheDarkForest.Classes.Character" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ACAGAAAAQIAAAEAgAAgAIQgIAIAEAAAABgAAAQAAAgE=</HashCode>
-      <FileName>Resources\Classes\Characters\Character.cs</FileName>
+      <HashCode>ACAEAAAAQIAAAEAgAAgAIQgIAIAEAAAABgAAAQAAAAE=</HashCode>
+      <FileName>Classes\Characters\Character.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Struct Name="TheDarkForest.Resources.Classes.Position">
-    <Position X="9.25" Y="0.75" Width="1.5" />
+  <Class Name="TheDarkForest.Classes.GameObject" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Classes\GameObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheDarkForest.Classes.Armor" Collapsed="true">
+    <Position X="11.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Items\Armor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheDarkForest.Classes.Item" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Classes\Items\Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheDarkForest.Classes.Weapon" Collapsed="true">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Items\Weapon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheDarkForest.Classes.Characters.Enemy" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Characters\Enemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheDarkForest.Classes.Characters.Healer" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAIAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Classes\Characters\Healer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheDarkForest.Classes.Characters.Player" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAABBAAAAAQAA=</HashCode>
+      <FileName>Classes\Characters\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheDarkForest.Classes.Items.Shield" Collapsed="true">
+    <Position X="9.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Items\Shield.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="TheDarkForest.Classes.Position">
+    <Position X="11.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAA=</HashCode>
-      <FileName>Resources\Classes\Position.cs</FileName>
+      <FileName>Classes\Position.cs</FileName>
     </TypeIdentifier>
   </Struct>
-  <Interface Name="TheDarkForest.Resources.Interfaces.IAttack">
-    <Position X="5.25" Y="0.75" Width="1.5" />
+  <Interface Name="TheDarkForest.Interfaces.IAttack">
+    <Position X="14" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Resources\Interfaces\IAttack.cs</FileName>
+      <FileName>Interfaces\IAttack.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="TheDarkForest.Resources.Interfaces.IMove">
-    <Position X="5.25" Y="2" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Resources\Interfaces\IMove.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="TheDarkForest.Resources.Interfaces.ICharacter">
-    <Position X="5.25" Y="3.25" Width="1.5" />
+  <Interface Name="TheDarkForest.Interfaces.ICharacter">
+    <Position X="14" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAQAAAAAAgAAAAAAAIAAAEAAAAAAAAAQAAAAA=</HashCode>
-      <FileName>Resources\Interfaces\ICharacter.cs</FileName>
+      <FileName>Interfaces\ICharacter.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Enum Name="TheDarkForest.Resources.Enumerations.AttackType">
-    <Position X="7.25" Y="0.75" Width="1.5" />
+  <Interface Name="TheDarkForest.Interfaces.IMove">
+    <Position X="14" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IMove.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="TheDarkForest.Enumerations.AttackType">
+    <Position X="16.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAA=</HashCode>
-      <FileName>Resources\Enumerations\AttackType.cs</FileName>
+      <FileName>Enumerations\AttackType.cs</FileName>
     </TypeIdentifier>
   </Enum>
-  <Enum Name="TheDarkForest.Resources.Enumerations.Direction">
-    <Position X="7.25" Y="2" Width="1.5" />
+  <Enum Name="TheDarkForest.Enumerations.Direction">
+    <Position X="16.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAACACAAAAAAAI=</HashCode>
-      <FileName>Resources\Enumerations\Direction.cs</FileName>
+      <FileName>Enumerations\Direction.cs</FileName>
     </TypeIdentifier>
   </Enum>
-  <Enum Name="TheDarkForest.Resources.Enumerations.Item">
-    <Position X="7.25" Y="3.5" Width="1.5" />
+  <Enum Name="TheDarkForest.Enumerations.Item">
+    <Position X="16.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAEAAAAAAAABAAAAAQAAAAgAEAAAAAAAAAI=</HashCode>
-      <FileName>Resources\Enumerations\Item.cs</FileName>
+      <FileName>Enumerations\Item.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Font Name="Tahoma" Size="8.25" />

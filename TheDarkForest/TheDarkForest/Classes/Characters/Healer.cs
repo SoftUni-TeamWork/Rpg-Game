@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace TheDarkForest.Classes.Characters
 {
+    using System;
+
     public class Healer : Character
     {
-        private const int healingPotion = 15;
-        private static bool isNotTired = false;
+        private const int HealingPotion = 15;
+
+        private bool isTired = true;
 
         public Healer(Guid id, int healthPoints, int attackPoints, int defencePoints, int currentLevel, Position position) 
             : base(id, healthPoints, attackPoints, defencePoints, currentLevel, position)
@@ -18,14 +21,13 @@ namespace TheDarkForest.Classes.Characters
 
         protected void Heal(Character player)
         {
-            if (isNotTired)
+            if (this.isTired)
             {
-                // if player is near the healer 
                 if (player.Position.X - this.Position.X < 1 &&
                     player.Position.Y - this.Position.X < 1)
                 {
-                    player.HealthPoints += healingPotion * player.CurrentLevel; // healing depents of players leveal 
-                    isNotTired = false;
+                    player.HealthPoints += HealingPotion * player.CurrentLevel; // healing depents of players leveal 
+                    isTired = false;
                 }
             }
         }
