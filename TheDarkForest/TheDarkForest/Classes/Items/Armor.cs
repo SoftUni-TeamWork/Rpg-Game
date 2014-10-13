@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TheDarkForest.Classes
+﻿namespace TheDarkForest.Classes
 {
+    using System;
+
     public class Armor : Item
     {
-        public Armor(Guid id, int effectOnChar) 
-            : base(id, effectOnChar)
+        private const int DefaultHealthPoints = 20;
+
+        public Armor(Guid id) 
+            : base(id, DefaultHealthPoints, 0, 0)
         {
         }
     }

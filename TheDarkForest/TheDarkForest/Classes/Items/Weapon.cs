@@ -1,17 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TheDarkForest.Classes
+﻿namespace TheDarkForest.Classes
 {
+    using System;
+
     public class Weapon : Item
     {
-        public Weapon(Guid id, int effectOnChar) 
-            : base(id, effectOnChar)
-        {
+        private const int DefaultAttackPoints = 20;
 
+        public Weapon(Guid id) 
+            : base(id, 0, DefaultAttackPoints, 0)
+        {
         }
     }
 }

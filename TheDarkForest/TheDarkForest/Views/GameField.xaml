@@ -7,7 +7,9 @@
              d:DesignHeight="300" d:DesignWidth="300">
     <Canvas Loaded="CanvasOnLoadedSetSizeToWindow">
         <Canvas.Background>
-            <ImageBrush ImageSource="/Resources/Images/map-background.png" TileMode="FlipXY" />
+            <ImageBrush ImageSource="/Resources/Images/map-background.png"
+                        Viewport="0,0,0.5,0.5"
+                        TileMode="Tile"/>
         </Canvas.Background>
     </Canvas>
 </UserControl>

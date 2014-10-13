@@ -19,10 +19,10 @@
         private int currentLevel;
         private Position position;
         
-        //public Character()
+        // public Character()
         //    : this(DefaultHealthPoints, DefaultAttackPoints, DefaultDefencePoints, DefaultStartLevel, DefaultPosition)
-        //{
-        //}
+        // {
+        // }
 
         public Character(Guid id, int healthPoints, int attackPoints, int defencePoints, int currentLevel, Position position) 
             : base(id)

@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TheDarkForest.Classes.Items
+﻿namespace TheDarkForest.Classes.Items
 {
+    using System;
+
     public class Shield : Item
     {
-        public Shield(Guid id, int effectOnChar) 
-            : base(id, effectOnChar)
+        private const int DefaultDefencePoints = 20;
+
+        public Shield(Guid id) 
+            : base(id, 0, 0, DefaultDefencePoints)
         {
         }
     }
