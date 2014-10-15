@@ -6,7 +6,7 @@
     {
         private const int HealingPotion = 15;
 
-        private bool isTired = true;
+        private bool isNotTired = true;
 
         public Healer(Guid id, int healthPoints, int attackPoints, int defencePoints, int currentLevel, Position position) 
             : base(id, healthPoints, attackPoints, defencePoints, currentLevel, position)
@@ -15,14 +15,10 @@
 
         protected void Heal(Character player)
         {
-            if (this.isTired)
+            if (this.isNotTired)
             {
-                if (player.Position.X - this.Position.X < 1 &&
-                    player.Position.Y - this.Position.X < 1)
-                {
-                    player.HealthPoints += HealingPotion * player.CurrentLevel; // healing depents of players leveal 
-                    this.isTired = false;
-                }
+                player.HealthPoints += HealingPotion * player.CurrentLevel; // healing depents of players leveal 
+                this.isNotTired = false;
             }
         }
     }

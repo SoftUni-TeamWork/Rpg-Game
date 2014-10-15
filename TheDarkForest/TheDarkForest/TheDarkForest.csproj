@@ -71,7 +71,6 @@
     <Compile Include="Classes\Position.cs" />
     <Compile Include="Enumerations\AttackType.cs" />
     <Compile Include="Enumerations\Direction.cs" />
-    <Compile Include="Enumerations\Item.cs" />
     <Compile Include="Interfaces\IAttack.cs" />
     <Compile Include="Interfaces\ICharacter.cs" />
     <Compile Include="Interfaces\IMove.cs" />

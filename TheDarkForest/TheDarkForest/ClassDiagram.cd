@@ -3,7 +3,7 @@
   <Class Name="TheDarkForest.Classes.Character" Collapsed="true">
     <Position X="2.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ACAEAAAAQIAAAEAgAAgAIQgIgIAEAAAGBgAAAQAAAAE=</HashCode>
+      <HashCode>ACAEAAAAQIAAAEAgAAgAIQgIgIAEAAAGBgAAAQEAAAE=</HashCode>
       <FileName>Classes\Characters\Character.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -18,7 +18,7 @@
   <Class Name="TheDarkForest.Classes.Armor">
     <Position X="11.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAE=</HashCode>
       <FileName>Classes\Items\Armor.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -32,7 +32,7 @@
   <Class Name="TheDarkForest.Classes.Weapon">
     <Position X="7.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAE=</HashCode>
       <FileName>Classes\Items\Weapon.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -46,21 +46,21 @@
   <Class Name="TheDarkForest.Classes.Characters.Healer">
     <Position X="2.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAIAAAAAAAAAAAAAAAEAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAQAAAEAA=</HashCode>
       <FileName>Classes\Characters\Healer.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TheDarkForest.Classes.Characters.Player">
     <Position X="5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAABBAAAAAQAA=</HashCode>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAABAAAAAAAAABBAAAACQAA=</HashCode>
       <FileName>Classes\Characters\Player.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TheDarkForest.Classes.Items.Shield">
     <Position X="9.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAE=</HashCode>
       <FileName>Classes\Items\Shield.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -111,13 +111,6 @@
     <TypeIdentifier>
       <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAACACAAAAAAAI=</HashCode>
       <FileName>Enumerations\Direction.cs</FileName>
-    </TypeIdentifier>
-  </Enum>
-  <Enum Name="TheDarkForest.Enumerations.Item">
-    <Position X="16.25" Y="3.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAEAAAAAAAABAAAAAQAAAAgAEAAAAAAAAAI=</HashCode>
-      <FileName>Enumerations\Item.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Font Name="Tahoma" Size="8.25" />

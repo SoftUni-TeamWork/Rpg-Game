@@ -20,6 +20,7 @@
         private int currentLevel;
         private Position position;
         private Inventory inventory;
+        private bool isAlive = true;
         
         // public Character()
         //    : this(DefaultHealthPoints, DefaultAttackPoints, DefaultDefencePoints, DefaultStartLevel, DefaultPosition)
@@ -35,6 +36,7 @@
             this.CurrentLevel = currentLevel;
             this.Position = position;
             this.inventory = new Inventory();
+            this.isAlive = true;
         }
 
         public int HealthPoints
@@ -48,7 +50,7 @@
             {
                 if (value < 0)
                 {
-                    throw new ArgumentException("The health points cannot be negative");
+                    isAlive = false;
                 }
 
                 this.healthPoints = value;
