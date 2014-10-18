@@ -154,7 +154,7 @@
 
         public virtual void Attack(Character target, AttackType attackType)
         {
-            throw new NotImplementedException();
+            target.HealthPoints = target.HealthPoints - (this.AttackPoints - target.DefencePoints);
         }
     }
 }
