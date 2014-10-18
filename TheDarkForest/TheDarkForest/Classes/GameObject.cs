@@ -5,6 +5,7 @@
     public abstract class GameObject
     {
         private Guid id;
+
         public GameObject(Guid id)
         {
             this.Id = id;

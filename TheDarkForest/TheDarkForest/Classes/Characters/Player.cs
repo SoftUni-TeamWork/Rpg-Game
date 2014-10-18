@@ -5,6 +5,7 @@
     public class Player : Character
     {
         private const int HealthGrowingOnLelvelUp = 100;
+
         private int experience = 0;
         private int neededExperienceForLevelUp = 1000;
         private int maxHealth;
