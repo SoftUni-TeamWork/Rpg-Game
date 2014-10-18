@@ -11,6 +11,7 @@
         protected const int DefaultAttackPoints = 20;
         protected const int DefaultDefencePoints = 10;
         protected const int DefaultStartLevel = 1;
+        protected const int MovingSpeed = 1;
 
         private static readonly Position DefaultPosition = new Position() { X = 0, Y = 0 };
 
@@ -149,7 +150,23 @@
 
         public virtual void Move(Direction direction)
         {
-            throw new NotImplementedException();
+            //Pseudo logic moving speed must be changed in any time
+            if (direction == Direction.Left)
+            {
+                this.position.X -= MovingSpeed;
+            }
+            else if (direction == Direction.Right)
+            {
+                this.position.X += MovingSpeed;
+            }
+            else if (direction == Direction.Up)
+            {
+                this.position.Y += MovingSpeed;
+            }
+            else
+            {
+                this.position.Y -= MovingSpeed;
+            }
         }
 
         public virtual void Attack(Character target, AttackType attackType)
