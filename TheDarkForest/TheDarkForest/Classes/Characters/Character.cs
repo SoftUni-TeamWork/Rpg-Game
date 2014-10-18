@@ -154,7 +154,7 @@
 
         public virtual void Attack(Character target, AttackType attackType)
         {
-            target.HealthPoints = target.HealthPoints + 1 - (this.AttackPoints - target.DefencePoints);
+            target.HealthPoints = target.HealthPoints - (this.AttackPoints - target.DefencePoints);
         }
     }
 }
