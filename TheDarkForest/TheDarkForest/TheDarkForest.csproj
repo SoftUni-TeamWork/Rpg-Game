@@ -74,6 +74,7 @@
     <Compile Include="Interfaces\IAttack.cs" />
     <Compile Include="Interfaces\ICharacter.cs" />
     <Compile Include="Interfaces\IMove.cs" />
+    <Compile Include="Interfaces\IUserInputInterface.cs" />
     <Compile Include="Views\GameField.xaml.cs">
       <DependentUpon>GameField.xaml</DependentUpon>
     </Compile>
