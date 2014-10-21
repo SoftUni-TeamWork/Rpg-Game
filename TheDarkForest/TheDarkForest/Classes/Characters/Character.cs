@@ -28,7 +28,7 @@
         // {
         // }
 
-        public Character(Guid id, int healthPoints, int attackPoints, int defencePoints, int currentLevel, Position position) 
+        public Character(Guid id, int healthPoints, int attackPoints, int defencePoints, Position position, int currentLevel = DefaultStartLevel ) 
             : base(id)
         {
             this.HealthPoints = healthPoints;

@@ -4,8 +4,8 @@
 
     public class Enemy : Character
     {
-        public Enemy(Guid id, int healthPoints, int attackPoints, int defencePoints, int currentLevel, Position position) 
-            : base(id, healthPoints, attackPoints, defencePoints, currentLevel, position)
+        public Enemy(Guid id, int healthPoints, int attackPoints, int defencePoints, Position position, int currentLevel) 
+            : base(id, healthPoints, attackPoints, defencePoints, position, currentLevel)
         {
         }
     }
