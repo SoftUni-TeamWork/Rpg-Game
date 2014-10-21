@@ -71,9 +71,9 @@
     <Compile Include="Classes\Position.cs" />
     <Compile Include="Enumerations\AttackType.cs" />
     <Compile Include="Enumerations\Direction.cs" />
-    <Compile Include="Interfaces\IAttack.cs" />
+    <Compile Include="Interfaces\IAttackable.cs" />
     <Compile Include="Interfaces\ICharacter.cs" />
-    <Compile Include="Interfaces\IMove.cs" />
+    <Compile Include="Interfaces\IMoveable.cs" />
     <Compile Include="Interfaces\IUserInputInterface.cs" />
     <Compile Include="Views\GameField.xaml.cs">
       <DependentUpon>GameField.xaml</DependentUpon>

@@ -1,4 +1,6 @@
-﻿namespace TheDarkForest.Classes.Characters
+﻿using TheDarkForest.Enumerations;
+
+namespace TheDarkForest.Classes.Characters
 {
     using System;
 

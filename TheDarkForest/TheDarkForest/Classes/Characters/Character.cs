@@ -5,7 +5,7 @@
     using TheDarkForest.Enumerations;
     using TheDarkForest.Interfaces;
 
-    public abstract class Character : GameObject, ICharacter, IMove, IAttack
+    public abstract class Character : GameObject, ICharacter, IMoveable, IAttackable
     {
         protected const int DefaultHealthPoints = 100;
         protected const int DefaultAttackPoints = 20;
@@ -22,13 +22,8 @@
         private Position position;
         private Inventory inventory;
         private bool isAlive = true;
-        
-        // public Character()
-        //    : this(DefaultHealthPoints, DefaultAttackPoints, DefaultDefencePoints, DefaultStartLevel, DefaultPosition)
-        // {
-        // }
 
-        public Character(Guid id, int healthPoints, int attackPoints, int defencePoints, Position position, int currentLevel = DefaultStartLevel ) 
+        public Character(Guid id, int healthPoints, int attackPoints, int defencePoints, Position position, int currentLevel = DefaultStartLevel) 
             : base(id)
         {
             this.HealthPoints = healthPoints;
@@ -47,11 +42,11 @@
                 return this.healthPoints;
             }
            
-            internal set
+            set
             {
                 if (value < 0)
                 {
-                    isAlive = false;
+                    this.isAlive = false;
                 }
 
                 this.healthPoints = value;
@@ -65,7 +60,7 @@
                 return this.attackPoints;
             }
 
-            protected set
+            set
             {
                 if (value < 0)
                 {
@@ -83,7 +78,7 @@
                 return this.defencePoints;
             }
 
-            protected set
+            set
             {
                 if (value < 0)
                 {
@@ -101,7 +96,7 @@
                 return this.currentLevel;
             }
 
-            protected set
+            set
             {
                 if (value < 0)
                 {
@@ -113,7 +108,7 @@
                     throw new ArgumentException("You are cheating. You can't upgrade your level with more than 1");
                 }
 
-                this.CurrentLevel = value;
+                this.currentLevel = value;
             }
         }
 
@@ -124,7 +119,7 @@
                 return this.position;
             }
 
-            protected set
+            set
             {
                 this.position = value;
             }
@@ -150,22 +145,25 @@
 
         public virtual void Move(Direction direction)
         {
-            //Pseudo logic moving speed must be changed in any time
-            if (direction == Direction.Left)
+            // Pseudo logic moving speed must be changed in any time
+            if (this.isAlive)
             {
-                this.position.X -= MovingSpeed;
-            }
-            else if (direction == Direction.Right)
-            {
-                this.position.X += MovingSpeed;
-            }
-            else if (direction == Direction.Up)
-            {
-                this.position.Y += MovingSpeed;
-            }
-            else
-            {
-                this.position.Y -= MovingSpeed;
+                if (direction == Direction.Left)
+                {
+                    this.position.X -= MovingSpeed;
+                }
+                else if (direction == Direction.Right)
+                {
+                    this.position.X += MovingSpeed;
+                }
+                else if (direction == Direction.Up)
+                {
+                    this.position.Y += MovingSpeed;
+                }
+                else
+                {
+                    this.position.Y -= MovingSpeed;
+                }
             }
         }
 
