@@ -6,12 +6,10 @@
     public class Inventory
     {
         private ISet<Item> items;
-
         public Inventory()
         {
             this.items = new HashSet<Item>();
         }
-
         public void AddItem(Item item)
         {
             if (item == null)
@@ -21,7 +19,6 @@
 
             this.items.Add(item);
         }
-
         public void RemoveItem(Item item)
         {
             if (!this.items.Contains(item))

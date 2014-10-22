@@ -15,7 +15,6 @@
             this.EffectAttackPoints = effectAttackPoints;
             this.EffectDefencePoints = effectDefencePoints;
         }
-
         public int EffectHealthPoints
         {
             get

@@ -5,8 +5,8 @@
     public class Weapon : Item
     {
         private const int DefaultHealthPoints = 0;
-        private const int DefaultAttackPoints = 20;
         private const int DefaultDefencePoints = 0;
+        private const int DefaultAttackPoints = 20;
 
         public Weapon(Guid id)
             : base(id, DefaultHealthPoints, DefaultAttackPoints, DefaultDefencePoints)
